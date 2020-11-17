@@ -17,7 +17,7 @@ endif "}}}
 
 if has('python') "{{{
     let s:script_path = expand("<sfile>:h")
-    py import sys
+    py import sys,vim
     py sys.path.append(vim.eval('s:script_path'))
 
 else
